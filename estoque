@@ -1,0 +1,52 @@
+
+
+alert("Bem vindo ao seu controle de estoque")
+
+let estoque_parafuso = 100
+
+let estoque_chaveinglesa = 100
+
+let estoque_porcas = 100
+
+for(let contador = 0; contador < 3; contador++){
+   
+    let parafuso =  prompt("digite a quantidade de parafusos") ;
+   
+    let chave_inglesa = prompt("digite a quantidade de chave inglesa");
+
+    let porcas = prompt("digite a quantidade de porcas");
+
+
+    estoque_parafuso = estoque_parafuso - parafuso;
+
+    estoque_chaveinglesa = estoque_chaveinglesa - chave_inglesa
+
+    estoque_porcas = estoque_porcas - porcas
+
+
+    if(estoque_parafuso <= 0){
+        alert("Estoque de parafuso acabou")
+     
+    } else{
+         alert("Estoque de parafuso cheio")
+     }
+
+
+  if(estoque_chaveinglesa <= 0){
+    alert("Estoque de chave inglesa acabou")
+ 
+} else{
+     alert("Estoque de chave inglesa cheio")
+ }
+
+ if(estoque_porcas <= 0){
+    alert("Estoque de porcas acabou")
+ 
+} else{
+     alert("Estoque de porcas cheio")
+ }
+
+
+}
+
+
